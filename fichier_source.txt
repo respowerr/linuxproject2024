@@ -1,0 +1,3 @@
+John:Doe:groupe1,groupe2:sudo:MotDePasse1
+Alice:Smith:groupe3:sudo:MotDePasse2
+Bob:Johnson:groupe1:sudo:MotDePasse3
