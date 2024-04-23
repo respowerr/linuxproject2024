@@ -10,7 +10,8 @@ if [ ! -e "$1" ]; then
 fi
 
 while IFS=':' read -r first_name last_name group_list sudo password; do
-    username="${first_name:0:1}${last_name}".lower()
+    username="${first_name:0:1}${last_name}"
+    username="${username,,}" 
     
     if id "$username" &>/dev/null; then
         index=1
