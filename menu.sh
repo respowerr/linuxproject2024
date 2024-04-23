@@ -8,10 +8,10 @@ select opt in "${options[@]}"
 do
     case $REPLY in
         1) 
-            if [ -f "fichier_source.txt" ]; then
-                ./create.sh fichier_source.txt
+            if [ -f "users.txt" ]; then
+                ./create.sh users.txt
             else
-                echo "Le fichier source 'fichier_source.txt' n'existe pas."
+                echo "Le fichier source 'users.txt' n'existe pas."
             fi
             ;;
         2) ./show.sh ;;
